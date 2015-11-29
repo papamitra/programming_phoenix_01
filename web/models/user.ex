@@ -24,5 +24,6 @@ defmodule Rumble.User do
     |> cast(params, @required_fields, @optional_fields)
     #|> cat(params, ~w(name, username), [])
     |> validate_length(:username, min: 1, max: 20)
+    |> validate_length(:name, min: 1, max: 20)
   end
 end
