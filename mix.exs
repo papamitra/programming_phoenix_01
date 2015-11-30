@@ -19,7 +19,7 @@ defmodule Rumble.Mixfile do
   def application do
     [mod: {Rumble, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger,
-                    :phoenix_ecto, :mongodb_ecto]]
+                    :phoenix_ecto, :mongodb_ecto, :comeonin]]
   end
 
   # Specifies which paths to compile per environment.
@@ -35,7 +35,8 @@ defmodule Rumble.Mixfile do
      {:mongodb_ecto, ">= 0.0.0"},
      {:phoenix_html, "~> 2.1"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:comeonin, "~> 1.2"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.
